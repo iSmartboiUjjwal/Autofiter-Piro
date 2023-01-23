@@ -21,17 +21,17 @@ PORT = environ.get("PORT", "8082")
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 4165961
 API_HASH = "38ba6396e513b86e9ed7ea534023a9cc"
-BOT_TOKEN = "5456930478:AAHiWlgBfDdkd5mCvQ7Dbq0UdWGej3rf4ZU"
+BOT_TOKEN = "5615739524:AAFClIBrhpVgOlILn0LsokgKbweOZJQzYKE"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS' ,'https://te.legra.ph/file/7b87785a8b6686370f6bf.jpg https://te.legra.ph/file/a1879771e29a7f63320e8.jpg')).split()
+PICS = (environ.get('PICS' ,'https://te.legra.ph/file/2da9a79f7addd0b565ad7.jpg https://te.legra.ph/file/39773739990f948153e75.jpg https://te.legra.ph/file/6e5062783460dd46a1011.jpg https://te.legra.ph/file/cb6c31f0f5749c446701d.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
 ADMINS = [1132901778]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001282513652 -1001611693204 -1001638006524 -1001612398277 -1001855514451').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001821097330').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -42,16 +42,16 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://imdb4gb1:imdb4gb1@cluster0.ovlqoai.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Series_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
-START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello {user} 👋🏻\nMy Name is {bot},I Can Provide Movies & Series Just Add Me To Your Group And Enjoy 😍</b>')
+START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello {user} 👋🏻\nMy Name is {bot},I Can Provide Only Series Just Add Me To Your Group And Enjoy 😍</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠️ Hey {query}! That's Not For You !! Request Own.")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', 'JOIN UPDATES CHANNEL TO USE THIS BOT')
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/19eeb26fa2ce58765917a.jpg")
-WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hey {user}</b>\n<b>welcome to {chat} !!</b>")
+WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hello {user} 👋</b>\n<b>Welcome To Our {chat} !!</b>")
 PMFILTER = bool(environ.get("PMFILTER", True))
 G_FILTER = bool(environ.get("G_FILTER", True))
 BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", True))
@@ -59,7 +59,7 @@ BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", True))
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001701907795))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001506619984))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'M2LINKSCOMMUNITY')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
