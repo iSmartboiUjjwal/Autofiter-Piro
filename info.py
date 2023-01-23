@@ -68,7 +68,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_caption}</
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<code>{file_caption}</code>\n\n<b>JOIN 💎 : @OTSeries\n\nPOWERED BY ❤️  @M2LINKS</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query:</b> {query}\n‌\n🏷 <b>Title :</b> <a href={url}>{title}</a>\n🎭 <b>Genres :</b> {genres}\n📆 <b>Year :</b> <ahref={url}/releaseinfo>{year}</a>\n🌟 <b>Rating :</b> <a href={url}/ratings>{rating}</a>\n📀 <b>RunTime :</b> {runtime} Minutes\n📆 <b>Release Info :</b> {release_date}\n\n<b>❤️‍🔥 Requested by :</b> {message.from_user.mention}\n\n<b>⚠️ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ɪɴ 5 ᴍɪɴᴜᴛᴇꜱ</b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
