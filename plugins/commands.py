@@ -38,7 +38,10 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-        ],[
+        ], 
+            [
+            InlineKeyboardButton('⚠ ꜰᴏʟʟᴏᴡ ᴜꜱ ᴏɴ ʏᴏᴜᴛᴜʙᴇ ⚠', url='https://youtube.com/@m2links')
+        ], [
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/M2LINKS')
         ], [
@@ -95,7 +98,7 @@ async def start(client, message):
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-     await message.reply_photo(
+        await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
