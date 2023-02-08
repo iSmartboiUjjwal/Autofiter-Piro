@@ -22,9 +22,6 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                InlineKeyboardButton('⚠ ꜰᴏʟʟᴏᴡ ᴜꜱ ᴏɴ ʏᴏᴜᴛᴜʙᴇ ⚠', url='https://www.youtube.com/channel/UCvr1BiR3mm_gmYm-9RY03uA')
-            ],
-            [
                 InlineKeyboardButton('🎗️ ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/M2LINKS'),
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]]
@@ -41,10 +38,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-        ], 
-            [
-            InlineKeyboardButton('⚠ ꜰᴏʟʟᴏᴡ ᴜꜱ ᴏɴ ʏᴏᴜᴛᴜʙᴇ ⚠', url='https://youtube.com/@m2links')
-        ], [
+        ],[
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/M2LINKS')
         ], [
@@ -52,10 +46,6 @@ async def start(client, message):
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-#         await message.reply_chat_action(enums.ChatAction.TYPING)
-#         m=await message.reply_sticker("CAACAgUAAxkBAAEG-spjprSY-hPcJpJPXtmfQ-FaKEh78wAC-AMAAp9EiVed3ajGmwsl5iwE")
-#         await asyncio.sleep(1)
-#         await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
@@ -105,11 +95,7 @@ async def start(client, message):
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-#         await message.reply_chat_action(enums.ChatAction.TYPING)
-#         m=await message.reply_sticker("CAACAgUAAxkBAAEG-spjprSY-hPcJpJPXtmfQ-FaKEh78wAC-AMAAp9EiVed3ajGmwsl5iwE")
-#         await asyncio.sleep(1)
-#         await m.delete()
-        await message.reply_photo(
+     await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
