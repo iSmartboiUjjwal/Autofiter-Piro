@@ -135,7 +135,7 @@ async def pm_next_page(bot, query):
     
     btn.insert(0,
         [
-            InlineKeyboardButton(text="🤔 How To Download 🤔", url='https://telegram.me/M2linksOfficial/27')
+            InlineKeyboardButton(text="🤔 How To Download")
         ]
     )
                 
@@ -220,7 +220,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="🤔 How To Download 🤔", url='https://telegram.me/M2linksOfficial/27')
+            InlineKeyboardButton(text="🤔 How To Download 🤔", url='https://telegram.me/Movies_X_Animes/41')
         ]
     )
 
@@ -405,7 +405,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode="md")
-        return await query.answer('🔆 @M2LINKS 🔆')
+        return await query.answer('♥️ 𝐌𝐨𝐯𝐢𝐞𝐬_𝐗_𝐀𝐧𝐢𝐦𝐞𝐬 ♥️')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -446,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('🔆 @M2LINKS 🔆')
+        return await query.answer('♥️ 𝐌𝐨𝐯𝐢𝐞𝐬_𝐗_𝐀𝐧𝐢𝐦𝐞𝐬 ♥️')
     elif query.data == "backcb":
         await query.answer()
 
@@ -457,7 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('🔆 @M2LINKS 🔆')
+            return await query.answer('♥️ 𝐌𝐨𝐯𝐢𝐞𝐬_𝐗_𝐀𝐧𝐢𝐦𝐞𝐬 ♥️')
         buttons = []
         for groupid in groupids:
             try:
@@ -600,10 +600,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
         ], 
             [
-            InlineKeyboardButton('⚠ ꜰᴏʟʟᴏᴡ ᴜꜱ ᴏɴ ʏᴏᴜᴛᴜʙᴇ ⚠', url='https://youtube.com/@m2links')
+            InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏᴠɪᴇs', url='https://t.me/movies_X_animes')
         ], [
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/M2LINKS')
+            InlineKeyboardButton('Join', url=f'Techy_Movies_World)
         ], [
             InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
