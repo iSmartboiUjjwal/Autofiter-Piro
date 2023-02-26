@@ -318,7 +318,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('🔆 @M2LINKS 🔆')
+                    return await query.answer('♥️ 𝐌𝐨𝐯𝐢𝐞𝐬_𝐗_𝐀𝐧𝐢𝐦𝐞𝐬 ♥️')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
@@ -384,7 +384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('🔆 @M2LINKS 🔆')
+        return await query.answer('♥️ 𝐌𝐨𝐯𝐢𝐞𝐬_𝐗_𝐀𝐧𝐢𝐦𝐞𝐬 ♥️')
     elif "connectcb" in query.data:
         await query.answer()
 
