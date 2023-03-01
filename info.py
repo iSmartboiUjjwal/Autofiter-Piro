@@ -19,30 +19,30 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8082")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = 4165961
-API_HASH = "38ba6396e513b86e9ed7ea534023a9cc"
-BOT_TOKEN = "5841213132:AAGkYFR1Joy6sBO4PmW7EyJX99IwXbgsjXc"
+API_ID = 16667300
+API_HASH = "ff966fef88a9a169153029cfe3d026e3')"
+BOT_TOKEN = "6053122617:AAFp_z8bCpmSIA1sRh6QTDldnyXvhwZ-GPI"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS' ,'https://te.legra.ph/file/8d55f05ab5520ae965c62.jpg https://te.legra.ph/file/3b686c63d77ae24368cd9.jpg')).split()
+PICS = (environ.get('PICS' ,'https://graph.org/file/1644c5fbdd21354abb336.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
-ADMINS = [1132901778]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001641178144').split()]
+ADMINS = [2051226979]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001738763076').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
-auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = -1001641178144
+auth_grp = environ.get('AUTH_GROUP', -1001787832831 -1001683835989)
+AUTH_CHANNEL = -1001896952704
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://seriesibot:seriesibot@cluster0.1dtisux.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MovieSearchBot:<password>@moviesearchbotdb.yewhexb.mongodb.net/?retryWrites=true&w=majority"")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'DemoDb')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
@@ -50,7 +50,7 @@ START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello {user} 👋🏻\nMy Name 
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠ Hey {query}! That's Not For You !! Request Own.")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', 'JOIN UPDATES CHANNEL TO USE THIS BOT')
 RemoveBG_API = environ.get("RemoveBG_API", "")
-WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/19eeb26fa2ce58765917a.jpg")
+WELCOM_PIC = environ.get("WELCOM_PIC", "https://te.legra.ph/file/19eeb26fa2ce58765917a.jpg")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hello {user} 👋</b>\n<b>Welcome To Our {chat} !!</b>")
 PMFILTER = bool(environ.get("PMFILTER", True))
 G_FILTER = bool(environ.get("G_FILTER", True))
