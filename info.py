@@ -59,8 +59,8 @@ BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", False))
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001506619984))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'M2LINKSCOMMUNITY')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001896952704))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+Z-ZmXh9Xxhc0MWQ1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
